@@ -104,9 +104,7 @@ def go_for_database(fullname, username,phonenumber, email,password):
         cur_sor.execute(que, values)
         print(5)
         mydb.commit()
-        # After inserting the data simply close the connections and the database
-        cur_sor.close()
-        mydb.close()
+
         print('DADA IS SAVED IN THE DATABSE')
         window.destroy()
         import login
