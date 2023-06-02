@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My websites</title>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+      
+      
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./images//logo.jpg" alt="logo" class="logo">
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#Home" class="navbar-link home-link" >Home</a></li>
+                <li><a href="ads" class="navbar-link about-link" >About</a></li>
+                 <li><a href="ads" class="navbar-link service-link" >Service</a></li>
+                <li><a href="asdg" class="navbar-link portfolio-link" >Portfolio</a></li>
+                <li><a href="adsg" class="navbar-link contact-link" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- ======================================================= -->
+    <!-- Nowmain section start -->
+    <!-- ========================================================= -->
+
+    <main>
+        <section class="section-hero section">
+            <div class="container grid grid-two-column">
+                <div class="section-hero-data">
+                    <p class="hero-top-data">this is me</p>
+                    <h1 class="hero-heading">Aayush Basnet</h1>
+                    <p class="hero-para">I am hero wehre i can learn any things if in takes interest
+                        and also in the math
+                    </p>
+
+                    <div>
+                        <a href="#" class="btn hireme-btn ">Hireme</a>
+                    </div>
+                </div>
+
+                    <!-- Hero section right side -->
+                    <div class="section-hero-image">
+                        <img src="./images/f.jpg" class="heroimage" alt="this is me aayush basnet">
+                    </div>
+    
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <section class="section-hero section">
+<div class="container grid grid-two-column">
+    <div class="bio-image">
+        <img src="./images/my.jpg" class="aboutimage" alt="this is me aayush basnet">
+    </div>
+
+    <div class="bio-data">
+        <h2 class="common-heading">my bio data</h2>
+        <p class="para-bio">
+
+             ure from 45 BC, making it over 2000 years old. Richard McClintock, a La
+             tin professor at Hampden-Sydney College in Virginia, looked up one of the mo
+   2.</p>
+            <br/>
+
+            <p class="para-bio">  
+      ure from 45 BC, making it over 2000 years old. Richard McClintock, a La
+                </p>
+
+
+                <div class="bio-data-status">
+                    <div class="bio-status">
+                        <h3>Design</h3>
+                        <div class="bio-progress-bar">
+                            <span>80%</span>
+                        </div>
+                    </div>
+
+                    <div class="bio-status">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar bio-progress-2">
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+
+                    <div class="bio-status">
+                        <h3>JAVASCRIPT</h3>
+                        <div class="bio-progress-bar bio-progress-3">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-status">
+                    <h3>MERN</h3>
+                    <div class="bio-progress-bar bio-progress-4">
+                        <span>89%</span>
+                    </div>
+                </div>
+
+
+                <div class="bio-data-btn">
+                    <a href="#" download="asdf" class="btn">Download</a>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
